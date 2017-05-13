@@ -16,3 +16,7 @@ function validaCampo(meuForm){
     return true;
   }
 }
+
+function resetaCampo(idCampo){
+  idCampo.style = "box-shadow:none;";
+}
