@@ -9,12 +9,12 @@
 
     <h1>Digite sua Informações</h1>
 
-    <form action="#" method="get" onsubmit="retunr validaCampo(this)">
+    <form action="#" method="get" onsubmit="return validaCampo(this)" onfocus="voltaAoNormal(this)">
       <fieldset>
         <legend>LOGIN</legend>
 
         <div>
-          <label for="iNUser">Nome de Usuário</label><br/>
+          <label for="iNUser" onfocus="voltaAoNormal(this)" >Nome de Usuário</label><br/>
           <input type="text" name="tNUser" id="iNUser"/>
         </div>
 
