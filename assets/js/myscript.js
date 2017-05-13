@@ -18,4 +18,9 @@ function validaCampo(meuForm){
     }
 }
 
+
+function resetaCampos(campo){
+    campo.iNUser = "box-shadow:none;"
+}
+
 //minhavariavel = {"100","70","90"}
