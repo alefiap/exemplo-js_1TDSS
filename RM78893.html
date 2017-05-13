@@ -9,18 +9,23 @@
 
     <h1>Digite sua Informações</h1>
 
-    <form action="#" method="get" onsubmit="return validaFuncao(this)" onfocus="return validaFoco(this)">
+    <form action="#" method="get" onsubmit="return validaFuncao(this)">
       <fieldset>
         <legend>LOGIN</legend>
 
         <div>
           <label for="iNUser">Nome de Usuário</label><br/>
-          <input type="text" name="tNUser" id="iNUser"/>
+          <input type="text" name="tNUser" id="iNUser" onfocus="resetaCampo(this)"/>
         </div>
 
         <div>
           <label for="iSenha">Senha</label><br/>
-          <input type="password" name="tSenha" id="iSenha"/>
+          <input type="password" name="tSenha" id="iSenha" onfocus="resetaCampo(this)"/>
+        </div>
+
+        <div>
+          <label for="iDtNasc">Data</label><br/>
+          <input type="date" name="tDtNasc" id="iDtNasc"/>
         </div>
 
         <div>

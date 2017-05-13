@@ -10,6 +10,9 @@ function validaFuncao(meuForm){
   if(meuForm.iNUser.value == ""){
     meuForm.iNUser.style = "box-shadow:1px 1px 20px #ff0000;";
     return false;
+  }else if(meuForm.iSenha.value == ""){
+    meuForm.iSenha.style = "box-shadow:1px 1px 20px #ff0000;";
+    return false;
   }else{
     return true;
   }
@@ -19,15 +22,6 @@ function validaFuncao(meuForm){
 //quando o usuário retornar ao campo
 //o campo deve voltar ao normal
 
-function validaFoco(meuForm){
-
-  //var meuForm = document.getElementById("form_01");
-
-  if(meuForm.iNUser.style == "box-shadow:1px 1px 20px #ff0000;"){
-    meuForm.iNUser.style = "box-shadow:1px 1px 20px #FFFAFA;";
-    return false;
-  }else{
-    return true;
-  }
-
+function resetaCampo(idCampo){
+  idCampo.style = "box-shadow:none"
 }
