@@ -7,11 +7,17 @@ function validaCampo(meuForm){
     meuForm.iNUser.style = "box-shadow:1px 1px 20px #ff0000;";
     return false;
   }
-  else{
-    return true;
+  else if (meuForm.iSenha.value == "") {
+    meuForm.iSenha.style = "box-shadow: 1px 1px 20px #ff0000;";
+    return false;
+  }else {
+      return false;
   }
+
+
 }
 //Exercicio 1
 function retornaCampo(meuForm) {
-  iNUser.style = "none;";
+  iNUser.style = "box-shadow:none;";
+  iSenha.style = "box-shadow:none;";
 }
