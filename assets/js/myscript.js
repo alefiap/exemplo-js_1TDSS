@@ -7,7 +7,7 @@ alert("Valor da variavel :" + minhaVariavel);
 */
 
 function validaCampo(meuForm){
-  var meuForm  = document.getElementById("form_01");
+var meuForm  = document.getElementById("form_01");
 
   if(meuForm.iNUser.value == ""){
     meuForm.iNUser.style = "box-shadow: 1px 1px 20px #ff0000;";
