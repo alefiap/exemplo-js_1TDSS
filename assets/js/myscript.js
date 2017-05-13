@@ -11,6 +11,6 @@ function validaCampo(meuForm){
     return true;
   }
 }
-function campo(tto){
-  iNUser.style = "none;";
+function resetaCampo(idCampo){
+  idCampo.style = "box-shadow: none;";
 }
