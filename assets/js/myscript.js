@@ -18,15 +18,20 @@ function validaCampo(meuForm) {
   if(meuForm.iNUser.value == ""){
   meuForm.iNUser.style = "box-shadow:1px 1px 20px #ff0000;";
   return false;
-}else {
+}
+else if(meuForm.iSenha.value == ""){
+  meuForm.iSenha.style = "box-shadow:1px 1px 20px #ff0000;";
+  return false;
+}
+else{
   return true;
- }
+}
 
 }
 
 //EXERCICIO 01Quando o usuario retornar ao campo, o campo deve voltar ao normal
-function retornaCampo(meuForm){
+function retornaCampo(idCampo){
 
-iNUser.style = "none;";
+idCampo.style = "box-shadow:none;";
 
 }
