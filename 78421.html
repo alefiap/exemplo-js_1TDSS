@@ -1,5 +1,3 @@
-<!--EXERCICIO 1 -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,13 +9,14 @@
 
     <h1>Digite sua Informações</h1>
 
-    <form action="#" method="get" onsubmit=" return validaCampo(this)" id="form_01">
+    <form action="#" method="get" onsubmit="return validaCampo(this)" id="form_01">
       <fieldset>
         <legend>LOGIN</legend>
 
         <div>
           <label for="iNUser">Nome de Usuário</label><br/>
-          <input type="text" name="tNUser" id="iNUser"/>
+          <input type="text" name="tNUser" id="iNUser"
+          onfocus="resetaCampo(this)"/>
         </div>
 
         <div>
@@ -31,6 +30,11 @@
 
       </fieldset>
     </form>
+
+
+
+
+
 
 <script type="text/javascript" src="assets/js/myscript.js"></script>
   </body>
