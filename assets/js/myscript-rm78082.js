@@ -12,4 +12,8 @@ function validaCampo(meuForm) {
   } else {
     return true;
   }
+
+  function resetCampo(idCampo) {
+    idCampo.style. = "box-shadow: none";
+  }
 }
